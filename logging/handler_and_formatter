@@ -1,0 +1,6 @@
+The formatter is responsible for rendering the event for output. This formatter uses the resource bundle that is specified in the event to look up the message in the appropriate language. Formatters are attached to handlers using the setFormatter method.
+
+
+Python file handlers are Python files which the server executes in response to requests made to the corresponding URL. ... py file will be treated as a handler file (note that this makes it easy to write unsafe handlers, particularly when running the server in a web-exposed setting).
+
+https://www.ibm.com/docs/en/was/8.5.5?topic=logger-log-formatters
