@@ -18,4 +18,4 @@ redada = marshal.loads(bytes)
 
 
 print(bytes)
-print(redada)
+print(f'\n{redada}')
