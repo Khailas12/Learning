@@ -1,4 +1,6 @@
-# child and grandchild relationship
+# the transfer of properties of characteristics is done to more than one class hierarchially. 
+# ancestor to grandchildren relation or root to leaf in a tree with more than one level
+
 
 class Base(object):
     def __init__(self, name):
