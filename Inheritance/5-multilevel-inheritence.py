@@ -1,4 +1,4 @@
-# child and grandchild relatioship
+# child and grandchild relationship
 
 class Base(object):
     def __init__(self, name):
