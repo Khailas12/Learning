@@ -10,6 +10,8 @@ Hybrid Inheritance
 Hierarchial Inheritance
 when more than one derived classes are created from a single base. in other words when more than one class inherits from a class.
 
+Hybrid inheritance
+This form combines more than one form of inheritance. Basically, it is a blend of more than one type of inheritance.
 
 Super 
 super() func makes class inheritance more manageacble and extensible. this returns a temporary obj that allows refrence to a parent class by the keyword super. 
