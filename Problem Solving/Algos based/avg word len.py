@@ -9,6 +9,5 @@ def avg_word(sentence):
     words = sentence.split()
     return round(sum(len(word) for word in words)/len(words), 2)
 
-
 print(avg_word(first))
 print(avg_word(second))
