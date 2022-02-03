@@ -19,7 +19,7 @@ class Rfile {
 
         for (int i = 1; i < n; i++) {
             ch = (char) f.read();
-            System.out.println(ch);
+            System.out.print(ch);
             if (ch == '\n') {
                 System.out.println(++j + ": ");
             }
