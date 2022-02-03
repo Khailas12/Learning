@@ -21,7 +21,7 @@ class Rfile {
             ch = (char) f.read();
             System.out.println(ch);
             if (ch == '\n') {
-                System.out.println(j + ": ");
+                System.out.println(++j + ": ");
             }
         }
     }
