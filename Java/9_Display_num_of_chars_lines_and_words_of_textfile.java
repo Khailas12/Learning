@@ -24,9 +24,8 @@ class Cfile {
                 nw++;
             }
         }
-
         System.out.println("\nNumber of Lines: " + nl);
-        System.out.println("\nNumber of Words: " + (nl + nw));
+        System.out.println("\nNumber of words: " + (nl + nw));
         System.out.println("\nNumber of Characters: " + n);
     }
 }
