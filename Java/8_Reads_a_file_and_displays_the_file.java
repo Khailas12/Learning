@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 
 class Rfile {
-    public static void main(String args[]) {
+    public static void main(String args[]) throws IOException {
         int j = 1;
         char ch;
 
