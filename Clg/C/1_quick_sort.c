@@ -16,7 +16,7 @@ void quicksort(int A[10], int low, int high) {
 
 int partition(int A[10], int low, int high) {
     int pivot, j, temp, i;
-    pivot  = low;
+    pivot = low;
     i = low;
     j = high;
 
@@ -25,7 +25,7 @@ int partition(int A[10], int low, int high) {
             i++;
         }
 
-        while (A[j] > A[pivot]) 
+        while (A[j] <= A[pivot])
             j++;
 
         if (i < j) {
@@ -34,4 +34,34 @@ int partition(int A[10], int low, int high) {
             A[j] = temp;
         }
     }
+    temp = A[pivot];
+    A[pivot] = A[j];
+    A[j] = temp;
+    return j;
+}
+
+
+void main() {
+    int i, n, A[10];
+    clock_t st, et;
+
+    printf("Enter the number of elements in array: \n");
+    scanf("%d", &n);
+
+    printf("Enter the elements of array: \n");
+    scanf("%d", &A[i]);
+
+    st= clock();
+    quicksort(A, 0, n-1);
+    et = clock();
+
+    double time_taken = (((double) (et - st)) / CLOCKS_PER_SEC) * 1000;
+
+    printf("Sorted list of elements: ");
+    for (i=0; i<n; i++) {
+        printf("%d", A[i]);
+    }
+
+    printf("The execution time is: %.Of milli seconds", time_taken);
+    getch();
 }
