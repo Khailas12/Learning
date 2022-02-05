@@ -58,10 +58,9 @@ void main() {
     double time_taken = (((double) (et - st)) / CLOCKS_PER_SEC) * 1000;
 
     printf("Sorted list of elements: ");
-    for (i=0; i<n; i++) {
+    for (i=0; i<n; i++) 
         printf("%d", A[i]);
-    }
-
+    
     printf("The execution time is: %.Of milli seconds", time_taken);
     getch();
 }
