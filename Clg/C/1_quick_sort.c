@@ -1,66 +1,47 @@
-// Write a program to sort an elements in an array using Quick Sort. Find time required to sort the elements.
+// Write a program to search on element in an array using method. Find the time required to search on element.
 
 #include <stdio.h>
-#include <conio.h>
 #include <time.h>
+#include <stdlib.h>
 
+void linearSearch(int a[], int n, int key) {
+    int i;
 
-void quicksort(int A[10], int low, int high) {
-    int j;
-    if (low < high) {
-        j = partition(A, low, high);
-        quicksort(A, low, j - 1);
-        quicksort(A, j+1, high);
+    for (i=0; i<n; i++) {
+        if (key == a[i]) 
+        return i;
     }
+    return -1;
 }
-
-int partition(int A[10], int low, int high) {
-    int pivot, j, temp, i;
-    pivot = low;
-    i = low;
-    j = high;
-
-    while (i < j) {
-        while (i < high && A[i] <= A[pivot]) {
-            i++;
-        }
-
-        while (A[j] <= A[pivot])
-            j++;
-
-        if (i < j) {
-            temp = A[i];
-            A[i] = A[j];
-            A[j] = temp;
-        }
-    }
-    temp = A[pivot];
-    A[pivot] = A[j];
-    A[j] = temp;
-    return j;
-}
-
 
 void main() {
-    int i, n, A[10];
-    clock_t st, et;
+    char ch;
+    int a[100], n, key, i, res;
 
-    printf("Enter the number of elements in array: \n");
+    clock_t st, et;
+    printf("Enter the no. of elements in an array: \n");
     scanf("%d", &n);
 
-    printf("Enter the elements of array: \n");
-    scanf("%d", &A[i]);
+    printf("Enter the element of array: \n");
+    for (i=0; i<n; i++)
+    scanf("%d", &a[i]);
 
-    st= clock();
-    quicksort(A, 0, n-1);
+    prinf("Enter the key element to search: \n");
+    scanf("%d", &key);
+
+    st = clock();
+    res = linearSearch(a, n, key);
     et = clock();
-
-    double time_taken = (((double) (et - st)) / CLOCKS_PER_SEC) * 1000;
-
-    printf("Sorted list of elements: ");
-    for (i=0; i<n; i++) 
-        printf("%d", A[i]);
     
-    printf("The execution time is: %.Of milli seconds", time_taken);
-    getch();
+    double time_taken = ((double) (et - st) / CLOCKS_PER_SEC ) * 1000;
+
+    if (res == -1) {
+        printf("The search elemetn is not found \n");
+        printf("The execution time is = %. of MilliSeconds", time_taken);
+        exit(0);
+    }
+
+    else
+    printf("The search element is found at positon %d \n", res+1);
+    prinf("The Execution time is=%. of MilliSeconds", time_taken);
 }
