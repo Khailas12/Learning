@@ -4,7 +4,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-void linearSearch(int a[], int n, int key) {
+int linearSearch(int a[], int n, int key) {
     int i;
 
     for (i=0; i<n; i++) {
@@ -26,7 +26,7 @@ void main() {
     for (i=0; i<n; i++)
     scanf("%d", &a[i]);
 
-    prinf("Enter the key element to search: \n");
+    printf("Enter the key element to search: \n");
     scanf("%d", &key);
 
     st = clock();
@@ -37,11 +37,11 @@ void main() {
 
     if (res == -1) {
         printf("The search elemetn is not found \n");
-        printf("The execution time is = %. of MilliSeconds", time_taken);
+        printf("The execution time is = %f Milli Seconds", time_taken);
         exit(0);
     }
 
     else
     printf("The search element is found at positon %d \n", res+1);
-    prinf("The Execution time is=%. of MilliSeconds", time_taken);
+    printf("The Execution time is= %f MilliSeconds");
 }
