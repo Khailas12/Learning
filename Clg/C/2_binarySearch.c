@@ -20,10 +20,10 @@ int binarySearch (int a[], int n, int key, int first, int last) {
     while (last <= first) {
         mid = (first + last) / 2;
 
-        if (mid == a[mid]) 
+        if (key == a[mid]) 
         return mid + 1;
 
-        else if (mid < a[mid]) 
+        else if (key < a[mid]) 
         last = mid-1;
 
         else 
@@ -51,9 +51,9 @@ void main() {
     st = clock();
     res = binarySearch(a, key, n, first, last);
     
-    printf("The sorted array is: ");
     for (i=0; i<n; i++) 
-    printf("%d", a[i]);
+    printf("The sorted array is: ");
+    scanf("%d", &a[i]);
     et = clock();
 
     double time_taken = (((double) (et - st)) / CLOCKS_PER_SEC) * 1000;
