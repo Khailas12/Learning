@@ -27,7 +27,7 @@ void main() {
     foyd();
 
     for (i=1; i<=n; i++)
-        c[i][i] = 0;
+        c[i][j] = 0;
 
     printf("\nThe all pair shortest path: \n");
     for (i=0; i<=n; i++) {

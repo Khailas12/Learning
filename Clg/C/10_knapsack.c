@@ -17,7 +17,7 @@ knapsack (int i, int c) {
     
     if (c<w[i]) 
         return knapsack(i+1, c);
-    return maximum (knapsack(i+1, c), knapsack(i+1, c-w[i] ) + p[i]);
+    return maximum (knapsack(i+1, c), knapsack(i+1, c-w[i]) + p[i]);
 }
 
 void main() {
