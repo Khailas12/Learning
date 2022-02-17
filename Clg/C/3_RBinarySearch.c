@@ -29,7 +29,7 @@ int RBinarySearch (int a[], int key, int n, int first, int last) {
     return RBinarySearch(a, key, n, first, mid-1);
 
     else 
-    return RBinarySearch(a, key, n, a+1, last);
+    return RBinarySearch(a, key, n, mid+1, last);
 }
 
 

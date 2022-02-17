@@ -25,7 +25,7 @@ main() {
                     a=u=i;
                     b=v=j;
                 }
-        
+            
         while (parent[u])
             u = parent[u];
         while (parent[v])  

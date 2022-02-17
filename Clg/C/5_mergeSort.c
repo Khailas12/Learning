@@ -6,7 +6,7 @@
 void Merge(int A[10], int low, int mid, int high) {
     int i, j, k, c[10];
     i = low;
-    k = low;
+    j = low;
     k = mid + 1;
 
     while ((i<=mid) && (j<=high)) {
@@ -37,6 +37,19 @@ void Merge(int A[10], int low, int mid, int high) {
 
     for (i=low; i<=k-1; i++)
         A[i] = c[i];
+}
+
+
+void MergeSort(int A[10], int low, int high) {
+    int mid;
+
+    if (low < high) {
+        mid = (low + high) / 2;
+
+        MergeSort(A, low, mid);
+        MergeSort(A, mid + 1, high);
+        Merge(A, low, mid, high);
+    }
 }
 
 void main() {
