@@ -1,8 +1,8 @@
 // Program to prepare a shopping list using array of objects.
 
-#include <iostream.h>
+#include <iostream>
 #include <conio.h>
-#include <iomanip.h>
+#include <iomanip>
 #include <stdio.h>
 
 const int size = 3;
@@ -44,7 +44,7 @@ void main() {
     cout << "Name Qty Rate Amount" << endl;
     cout << "__________________________" << endl;
 
-    for (i=0; i<size; i++)  
+    for (int i=0; i<size; i++)  
         shop[i].printdata();
 
     cout << "____________________" << endl;
