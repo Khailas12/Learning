@@ -1,3 +1,5 @@
+// Prog that reads a file and displays the file with a line number bfr each line.
+
 import java.util.*;
 import java.io.*;
 
@@ -21,7 +23,7 @@ class Rfile {
             ch = (char) f.read();
             System.out.print(ch);
             if (ch == '\n') {
-                System.out.println(++j + ": ");
+                System.out.print(++j + ": ");
             }
         }
     }
