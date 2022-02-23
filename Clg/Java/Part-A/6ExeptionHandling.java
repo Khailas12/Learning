@@ -1,3 +1,5 @@
+// Prog with multiple catch clauses to handle exception like arithemetic exception, ArrayIndexOutOfBoundsException.
+
 class MultipleCatchBlock1 {
     public static void main(String[] args) {
         try {

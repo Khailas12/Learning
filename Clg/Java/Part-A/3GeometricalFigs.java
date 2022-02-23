@@ -1,3 +1,5 @@
+// Prog to calculate the areas of different geomentrical shape using abstract class
+
 import java.lang.Math;
 
 // abstract class -> to provide a common definition of a base class that multiple derived classes can share
