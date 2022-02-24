@@ -5,7 +5,7 @@ import java.io.InputStreamReader;
 
 class LeapYear {
     public static void main(String args[]) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(system.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Enter Year");
         int year = Integer.parseInt(br.readLine());
