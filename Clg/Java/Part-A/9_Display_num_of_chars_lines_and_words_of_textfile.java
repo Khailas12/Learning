@@ -1,3 +1,5 @@
+// Prog that displays the nums of characters, lines and words of a text file.
+
 import java.util.*;
 import java.io.*;
 

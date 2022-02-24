@@ -17,7 +17,7 @@ class Factorial {
 
         for (int i=0; i<args.length; i++) {
             fact = 1;
-            while (arr [i] > 0) {
+            while (arr[i] > 0) {
                 fact = fact * arr[i];
                 arr[i]--;
             }

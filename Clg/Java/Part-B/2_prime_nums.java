@@ -1,6 +1,5 @@
 // Prog to display all prime nums btwn two limits
 
-
 class PrimeNumber {
     public static void main(String args[]) {
         int i, j;

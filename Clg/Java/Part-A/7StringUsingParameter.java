@@ -1,5 +1,8 @@
+// Applet which receives fontname and fontsize as parameters and displays a string using these parameters.
+
 import java.awt.*;
 import java.applet.*;
+
 
 class font extends Applet {
     Font f1, f2, f3;
