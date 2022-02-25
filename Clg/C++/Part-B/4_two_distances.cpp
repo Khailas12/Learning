@@ -13,11 +13,13 @@ class dist {
     
     public:
     dist() {
-        feet=0; inches=0.0;
+        feet=0;
+        inches=0.0;
     }
 
     dist(int ft, float in) {
-        feet=ft; inches=in;
+        feet=ft; 
+        inches=in;
     }
 
     void getdist() {
