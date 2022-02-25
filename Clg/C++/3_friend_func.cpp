@@ -7,8 +7,8 @@
 
 class sample {
     private:
-    int x;
-    int y;
+        int x;
+        int y;
 
     public: 
     void setdata(int a, int b) {
@@ -40,8 +40,8 @@ void main () {
 
     cout << "\nBefore Swapping: ";
     s.showdata();
+    
     swap(s);
-
     cout << "\nAfter Swapping: ";
     s.showdata();
 }
