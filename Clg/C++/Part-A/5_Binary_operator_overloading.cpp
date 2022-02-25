@@ -18,8 +18,8 @@ class matrix {
         rc = n;
     }
     
-    matinput();
-    matprint();
+    void matinput();
+    void matprint();
     matrix operator * (matrix);
 };
 
